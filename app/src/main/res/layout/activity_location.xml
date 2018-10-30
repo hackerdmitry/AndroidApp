@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <TextView
+        android:id="@+id/tvTitleGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/provider_gps"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/tvEnabledGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleGPS"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleGPS"
+        app:layout_constraintTop_toTopOf="@+id/tvTitleGPS"></TextView>
+
+    <TextView
+        android:id="@+id/tvStatusGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEnabledGPS"
+        app:layout_constraintStart_toEndOf="@+id/tvEnabledGPS"
+        app:layout_constraintTop_toTopOf="@+id/tvEnabledGPS"></TextView>
+
+    <TextView
+        android:id="@+id/tvLocationGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStatusGPS"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleGPS"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleGPS"></TextView>
+
+    <TextView
+        android:id="@+id/tvTitleNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/provider_network"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvLocationGPS"
+        app:layout_constraintStart_toStartOf="@+id/tvLocationGPS"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocationGPS"></TextView>
+
+    <TextView
+        android:id="@+id/tvEnabledNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleNet"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleNet"
+        app:layout_constraintTop_toTopOf="@+id/tvTitleNet"></TextView>
+
+    <TextView
+        android:id="@+id/tvStatusNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEnabledNet"
+        app:layout_constraintStart_toEndOf="@+id/tvEnabledNet"
+        app:layout_constraintTop_toTopOf="@+id/tvEnabledNet"></TextView>
+
+    <TextView
+        android:id="@+id/tvLocationNet"
+        android:layout_width="1dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStatusNet"
+        app:layout_constraintStart_toEndOf="@+id/tvStatusNet"
+        app:layout_constraintTop_toTopOf="@+id/tvStatusNet"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+</android.support.constraint.ConstraintLayout>
